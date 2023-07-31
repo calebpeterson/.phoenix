@@ -1,0 +1,9 @@
+{
+  "name": "phoenix-wm-config",
+  "private": true,
+  "scripts": {
+    "create-symlink": "ln -s ~/.phoenix/index.js ~/.phoenix.js",
+    "install:blink1-tool": "brew install blink1",
+    "tail-logs": "log stream --process Phoenix"
+  }
+}
