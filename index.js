@@ -176,6 +176,7 @@ require("lib/layout/playwright.js");
 
 require("lib/hotkeys/jump-to.js");
 require("lib/hotkeys/jumps.js");
+require("lib/hotkeys/notes.js");
 
 // Development helper - F10 to dump a list of all window titles + app names to the logs
 keys.push(
