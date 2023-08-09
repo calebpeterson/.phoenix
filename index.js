@@ -9,6 +9,7 @@
 require("lib/utils/alert.js");
 require("lib/utils/createToast.js");
 require("lib/utils/getCurrentWindow.js");
+require("lib/utils/prompt.js");
 require("lib/utils/timeout.js");
 
 const NUDGE_PX = 44;
@@ -174,7 +175,9 @@ require("lib/agents/zoom-status.js");
 
 require("lib/layout/playwright.js");
 
-require("lib/hotkeys/jump-to.js");
+require("lib/hotkeys/copilot.js");
+// require("lib/hotkeys/jump-to.js");
+require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
 require("lib/hotkeys/notes.js");
 
