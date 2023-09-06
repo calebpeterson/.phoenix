@@ -6,10 +6,16 @@
 
 // Tail logs: log stream --process Phoenix
 
+require("env.js");
+
 require("lib/utils/alert.js");
 require("lib/utils/createToast.js");
 require("lib/utils/getCurrentWindow.js");
-require("lib/utils/prompt.js");
+require("lib/utils/getTimestamp.js");
+require("lib/utils/getPathname.js");
+require("lib/utils/getWindowByTitle.js");
+require("lib/utils/splitPathnameFilename.js");
+require("lib/utils/task.js");
 require("lib/utils/timeout.js");
 
 const NUDGE_PX = 44;
@@ -170,6 +176,7 @@ keys.push(
     window.focus();
   })
 );
+require("lib/utils/prompt.js");
 
 require("lib/agents/zoom-status.js");
 

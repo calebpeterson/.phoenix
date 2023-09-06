@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "create-symlink": "ln -s ~/.phoenix/index.js ~/.phoenix.js",
+    "create-symlink:code": "ln -s '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' /usr/local/bin/code",
     "install:blink1-tool": "brew install blink1",
     "tail-logs": "log stream --process Phoenix"
   }
