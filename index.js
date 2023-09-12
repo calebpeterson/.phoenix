@@ -188,6 +188,7 @@ require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
 require("lib/hotkeys/maximize.js");
 require("lib/hotkeys/notes.js");
+require("lib/hotkeys/todos.js");
 require("lib/hotkeys/list-windows.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/disabled.js");
