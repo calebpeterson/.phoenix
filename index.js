@@ -193,5 +193,6 @@ require("lib/hotkeys/todos.js");
 require("lib/hotkeys/list-windows.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/disabled.js");
+require("lib/hotkeys/hotkey-hints.js");
 
 Phoenix.notify("Configuration loaded");
