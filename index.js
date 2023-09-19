@@ -17,6 +17,7 @@ require("lib/utils/getWindowByTitle.js");
 require("lib/utils/splitPathnameFilename.js");
 require("lib/utils/task.js");
 require("lib/utils/timeout.js");
+require("lib/utils/hotkey.js");
 
 const NUDGE_PX = 44;
 
