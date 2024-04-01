@@ -179,6 +179,7 @@ keys.push(
 );
 require("lib/utils/prompt.js");
 
+require("lib/agents/wallpaper.js");
 require("lib/agents/zoom-status.js");
 
 require("lib/layout/playwright.js");
