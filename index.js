@@ -1,6 +1,3 @@
-// Based on @stevenhauser's Phoenix config
-// https://gist.github.com/stevenhauser/5e3bda2c6d603b712b1e757472eb56e6
-
 // Source: https://github.com/kasper/phoenix
 // Wiki: https://github.com/kasper/phoenix/wiki
 
