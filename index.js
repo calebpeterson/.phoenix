@@ -8,6 +8,7 @@ require("env.js");
 
 require("lib/utils/alert.js");
 require("lib/utils/createToast.js");
+require("lib/utils/prompt.js");
 require("lib/utils/getCurrentWindow.js");
 require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
@@ -150,7 +151,6 @@ keys.push(
     window.focus();
   })
 );
-require("lib/utils/prompt.js");
 
 require("lib/agents/auto-maximize.js");
 require("lib/agents/wallpaper.js");
