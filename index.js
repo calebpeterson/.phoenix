@@ -13,6 +13,7 @@ require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
 require("lib/utils/getWindowByTitle.js");
 require("lib/utils/splitPathnameFilename.js");
+require("lib/utils/moveToScreen.js");
 require("lib/utils/task.js");
 require("lib/utils/debounce.js");
 require("lib/utils/timeout.js");
@@ -41,33 +42,6 @@ const positionWindow = ({ name, getRect, computeCoords }) => {
   window.setSize({ width, height });
   window.setTopLeft({ x, y });
 };
-
-function moveToScreen(window, screen) {
-  if (!window) return;
-  if (!screen) return;
-
-  var frame = window.frame();
-  var oldScreenRect = window.screen().visibleFrameInRectangle();
-  var newScreenRect = screen.visibleFrameInRectangle();
-  var xRatio = newScreenRect.width / oldScreenRect.width;
-  var yRatio = newScreenRect.height / oldScreenRect.height;
-
-  var mid_pos_x = frame.x + Math.round(0.5 * frame.width);
-  var mid_pos_y = frame.y + Math.round(0.5 * frame.height);
-
-  window.setFrame({
-    x:
-      (mid_pos_x - oldScreenRect.x) * xRatio +
-      newScreenRect.x -
-      0.5 * frame.width,
-    y:
-      (mid_pos_y - oldScreenRect.y) * yRatio +
-      newScreenRect.y -
-      0.5 * frame.height,
-    width: frame.width,
-    height: frame.height,
-  });
-}
 
 const configs = {
   up: {
@@ -195,4 +169,14 @@ require("lib/hotkeys/quit.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
 
-Phoenix.notify("Configuration loaded");
+// Show a toast when configuration changes are loaded.
+const onReady = () => {
+  const modal = createToast(Screen.main(), {
+    text: "🐦‍🔥 Phoenix configuration loaded",
+    duration: 2,
+  });
+
+  modal.show();
+};
+
+onReady();
