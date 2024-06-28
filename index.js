@@ -1,4 +1,5 @@
 // Source: https://github.com/kasper/phoenix
+// Documentation: https://kasper.github.io/phoenix/
 // Wiki: https://github.com/kasper/phoenix/wiki
 
 // Tail logs: log stream --process Phoenix
@@ -13,6 +14,7 @@ require("lib/utils/getPathname.js");
 require("lib/utils/getWindowByTitle.js");
 require("lib/utils/splitPathnameFilename.js");
 require("lib/utils/task.js");
+require("lib/utils/debounce.js");
 require("lib/utils/timeout.js");
 require("lib/utils/hotkey.js");
 
@@ -176,6 +178,7 @@ keys.push(
 );
 require("lib/utils/prompt.js");
 
+require("lib/agents/auto-maximize.js");
 require("lib/agents/wallpaper.js");
 require("lib/agents/zoom-status.js");
 
