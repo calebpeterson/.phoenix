@@ -14,6 +14,7 @@ require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
 require("lib/utils/getWindowByTitle.js");
 require("lib/utils/splitPathnameFilename.js");
+require("lib/utils/focusWindow.js");
 require("lib/utils/moveToScreen.js");
 require("lib/utils/task.js");
 require("lib/utils/debounce.js");
