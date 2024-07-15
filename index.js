@@ -13,6 +13,7 @@ require("lib/utils/getCurrentWindow.js");
 require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
 require("lib/utils/getWindowByTitle.js");
+require("lib/utils/isPrimitive.js");
 require("lib/utils/splitPathnameFilename.js");
 require("lib/utils/focusWindow.js");
 require("lib/utils/moveToScreen.js");
@@ -160,6 +161,7 @@ require("lib/agents/zoom-status.js");
 require("lib/layout/playwright.js");
 
 require("lib/hotkeys/copilot.js");
+require("lib/hotkeys/quick-eval.js");
 // require("lib/hotkeys/jump-to.js");
 require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
