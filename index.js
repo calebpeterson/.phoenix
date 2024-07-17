@@ -10,6 +10,7 @@ require("lib/utils/alert.js");
 require("lib/utils/createToast.js");
 require("lib/utils/prompt.js");
 require("lib/utils/getCurrentWindow.js");
+require("lib/utils/getInterfaceMode.js");
 require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
 require("lib/utils/getWindowByTitle.js");
@@ -173,8 +174,8 @@ require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
 
 // Show a toast when configuration changes are loaded.
-const onReady = () => {
-  const modal = createToast(Screen.main(), {
+const onReady = async () => {
+  const modal = await createToast(Screen.main(), {
     text: "🐦‍🔥 Phoenix configuration loaded",
     duration: 2,
   });
