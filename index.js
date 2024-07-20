@@ -6,28 +6,27 @@
 
 require("env.js");
 
+require("lib/utils/EventEmitter.js");
 require("lib/utils/alert.js");
 require("lib/utils/createToast.js");
-require("lib/utils/prompt.js");
+require("lib/utils/debounce.js");
+require("lib/utils/focusWindow.js");
 require("lib/utils/getCurrentWindow.js");
 require("lib/utils/getInterfaceMode.js");
-require("lib/utils/getTimestamp.js");
 require("lib/utils/getPathname.js");
+require("lib/utils/getTimestamp.js");
 require("lib/utils/getWindowByTitle.js");
-require("lib/utils/isPrimitive.js");
-require("lib/utils/splitPathnameFilename.js");
-require("lib/utils/focusWindow.js");
-require("lib/utils/moveToScreen.js");
-require("lib/utils/task.js");
-require("lib/utils/debounce.js");
-require("lib/utils/timeout.js");
 require("lib/utils/hotkey.js");
+require("lib/utils/isPrimitive.js");
+require("lib/utils/logger.js");
+require("lib/utils/moveToScreen.js");
+require("lib/utils/prompt.js");
+require("lib/utils/splitPathnameFilename.js");
+require("lib/utils/task.js");
+require("lib/utils/timeout.js");
+require("lib/utils/toastAllScreens.js");
 
 const NUDGE_PX = 44;
-
-const log = (...things) => {
-  Phoenix.log(things.map((thing) => JSON.stringify(thing)));
-};
 
 const OSASCRIPT_PATH = "/usr/bin/osascript";
 
@@ -172,6 +171,9 @@ require("lib/hotkeys/list-windows.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
+
+require("lib/modes/Mode.js");
+require("lib/modes/window-layout.js");
 
 // Show a toast when configuration changes are loaded.
 const onReady = async () => {
