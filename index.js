@@ -27,10 +27,8 @@ require("lib/utils/task.js");
 require("lib/utils/timeout.js");
 require("lib/utils/toastAllScreens.js");
 
-const OSASCRIPT_PATH = "/usr/bin/osascript";
-
-const osascript = (script, callback = _.noop) =>
-  Task.run(OSASCRIPT_PATH, ["-e", script], callback);
+// Layout
+require("lib/layout/helpers.js");
 
 // Agents
 require("lib/agents/auto-maximize.js");
@@ -40,7 +38,6 @@ require("lib/agents/zoom-status.js");
 // Hotkeys
 require("lib/hotkeys/copilot.js");
 require("lib/hotkeys/quick-eval.js");
-// require("lib/hotkeys/jump-to.js");
 require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
 require("lib/hotkeys/maximize.js");
@@ -49,6 +46,7 @@ require("lib/hotkeys/list-windows.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
+require("lib/hotkeys/window-layout.js");
 
 // Auto-layouts
 require("lib/layout/playwright.js");
