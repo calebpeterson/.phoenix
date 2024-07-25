@@ -17,6 +17,7 @@ require("lib/utils/getInterfaceMode.js");
 require("lib/utils/getPathname.js");
 require("lib/utils/getTimestamp.js");
 require("lib/utils/getWindowByTitle.js");
+require("lib/utils/groupBy.js");
 require("lib/utils/hotkey.js");
 require("lib/utils/isPrimitive.js");
 require("lib/utils/logger.js");
