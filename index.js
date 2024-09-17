@@ -1,3 +1,4 @@
+// Phoenix configuration entry point.
 // Source: https://github.com/kasper/phoenix
 // Documentation: https://kasper.github.io/phoenix/
 // Wiki: https://github.com/kasper/phoenix/wiki
