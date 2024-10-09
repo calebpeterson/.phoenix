@@ -41,6 +41,7 @@ require("lib/agents/zoom-status.js");
 require("lib/hotkeys/copilot.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
+require("lib/hotkeys/float-window.js");
 require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
 require("lib/hotkeys/list-windows.js");

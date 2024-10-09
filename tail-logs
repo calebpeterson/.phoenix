@@ -1,0 +1,3 @@
+#! /bin/sh
+
+log stream --process Phoenix | grep -v 'Could not add notification' | grep -v 'Could not remove notification'
