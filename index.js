@@ -51,6 +51,7 @@ require("lib/hotkeys/quit.js");
 require("lib/hotkeys/tile-window-left.js");
 require("lib/hotkeys/tile-window-right.js");
 require("lib/hotkeys/todos.js");
+require("lib/hotkeys/task-complete.js");
 require("lib/hotkeys/window-to-screen.js");
 
 // Auto-layouts
