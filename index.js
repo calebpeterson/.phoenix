@@ -34,6 +34,7 @@ require("lib/layout/helpers.js");
 
 // Agents
 require("lib/agents/auto-maximize.js");
+require("lib/agents/stretch-reminder.js");
 require("lib/agents/wallpaper.js");
 require("lib/agents/zoom-status.js");
 
@@ -50,6 +51,8 @@ require("lib/hotkeys/quick-eval.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/tile-window-left.js");
 require("lib/hotkeys/tile-window-right.js");
+require("lib/hotkeys/tile-window-up.js");
+require("lib/hotkeys/tile-window-down.js");
 require("lib/hotkeys/todos.js");
 require("lib/hotkeys/task-complete.js");
 require("lib/hotkeys/window-to-screen.js");
