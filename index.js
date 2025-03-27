@@ -39,7 +39,7 @@ require("lib/agents/wallpaper.js");
 require("lib/agents/zoom-status.js");
 
 // Hotkeys
-require("lib/hotkeys/copilot.js");
+require("lib/hotkeys/ai.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
 require("lib/hotkeys/float-window.js");
@@ -56,7 +56,6 @@ require("lib/hotkeys/tile-window-down.js");
 require("lib/hotkeys/todos.js");
 require("lib/hotkeys/task-complete.js");
 require("lib/hotkeys/window-to-screen.js");
-
 // Auto-layouts
 require("lib/layout/playwright.js");
 
