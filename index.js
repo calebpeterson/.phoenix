@@ -33,6 +33,7 @@ require("lib/utils/toastAllScreens.js");
 require("lib/layout/helpers.js");
 
 // Agents
+require("lib/agents/adjust-volume-for-superwhisper.js");
 require("lib/agents/auto-maximize.js");
 require("lib/agents/stretch-reminder.js");
 require("lib/agents/wallpaper.js");
