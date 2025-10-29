@@ -43,6 +43,7 @@ require("lib/agents/zoom-status.js");
 
 // Hotkeys
 require("lib/hotkeys/ai.js");
+require("lib/hotkeys/calc.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
 require("lib/hotkeys/float-window.js");
@@ -50,7 +51,6 @@ require("lib/hotkeys/join-zoom-jam-room.js");
 require("lib/hotkeys/jumps.js");
 require("lib/hotkeys/list-windows.js");
 require("lib/hotkeys/maximize.js");
-require("lib/hotkeys/quick-eval.js");
 require("lib/hotkeys/quit.js");
 require("lib/hotkeys/tile-window-left.js");
 require("lib/hotkeys/tile-window-right.js");
