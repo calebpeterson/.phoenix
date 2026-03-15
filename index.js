@@ -5,8 +5,6 @@
 
 // Tail logs: log stream --process Phoenix
 
-const APPLE_SCRIPT_PATH = "/usr/bin/osascript";
-
 require("env.js");
 
 // Utils
@@ -37,7 +35,7 @@ require("lib/layout/helpers.js");
 // Agents
 require("lib/agents/adjust-volume-for-transcription.js");
 require("lib/agents/auto-maximize.js");
-require("lib/agents/stretch-reminder.js");
+// require("lib/agents/stretch-reminder.js");
 require("lib/agents/wallpaper.js");
 require("lib/agents/zoom-status.js");
 
