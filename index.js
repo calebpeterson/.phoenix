@@ -42,6 +42,7 @@ require("lib/agents/zoom-status.js");
 // Hotkeys
 require("lib/hotkeys/ai.js");
 // require("lib/hotkeys/calc.js");
+require("lib/hotkeys/center-window.js");
 require("lib/hotkeys/disabled.js");
 require("lib/hotkeys/hotkey-hints.js");
 require("lib/hotkeys/float-window.js");
